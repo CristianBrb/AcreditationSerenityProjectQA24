@@ -31,6 +31,7 @@ public class ProductTest extends BaseTest {
     }
 
 
+
     @Test
     public void verifyPriceDescending() {
         shopSteps.dropDownSortByPriceDescending();
