@@ -65,18 +65,17 @@ public class AdminSteps {
     }
 
     @Step
-    public boolean verifiProdWasDeleted(){
+    public void verifiProdWasDeleted(){
         adminPage.setSwichAdminToUserWindow();
         searchPage.typeElementIntoSearchField(name);
-        Assert.assertFalse(name.equals(searchPage.searchResultsTitle()));
-        return true;
+        Assert.assertNotEquals(name, searchPage.searchResultsTitle());
     }
 
     @Step
     public void searchProduct(String product){
         adminPage.setSwichAdminToUserWindow();
         searchPage.typeElementIntoSearchFieldSendKeys(product);
-        Assert.assertFalse(product.equals(searchPage.searchResultsTitle()));
+        Assert.assertNotEquals(product, searchPage.searchResultsTitle());
     }
 
 
