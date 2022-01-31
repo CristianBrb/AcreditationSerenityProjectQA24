@@ -13,7 +13,7 @@ public class AdminSteps {
     private AdminPage adminPage;
     private SearchPage searchPage;
 
-    String name= "New Product "+ RandomStringUtils.randomAlphabetic(2);
+    String name= "New "+ RandomStringUtils.randomAlphabetic(3);
 
     @Step
     public String getProduct(){
