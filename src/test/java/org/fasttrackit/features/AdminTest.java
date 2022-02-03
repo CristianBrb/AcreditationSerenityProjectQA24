@@ -20,7 +20,7 @@ public class AdminTest extends BaseTest {
     @Test
     public void changeTitleAndPrice(){
         adminSteps.editProduct("New Product nM");
-     adminSteps.modifyTitleAndPriceQuickEdit("product nM",60);
+     adminSteps.modifyTitleAndPriceQuickEdit("product nM",70);
      adminSteps.searchProduct("New Product nM");
     }
 
